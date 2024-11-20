@@ -1,0 +1,22 @@
+.main-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: calc(100% - 240px); 
+    margin-left: 240px; 
+    padding: 1rem;
+    margin-left: 20rem;
+    background-color: #0d1117;
+    border-radius: 20px;
+}
+
+.connection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 60px;
+}

@@ -1,0 +1,44 @@
+.connection-card {
+    background-color: #000a15;
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.connection-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    flex: 1;
+}
+
+.user-name {
+    color: rgb(238, 163, 163);
+    font-size: 18px;
+    font-weight: 900;
+    margin: 0 0 4px 0;
+}
+
+.user-semester {
+    color: #a0a0a0;
+    font-size: 10px;
+    margin: 0 0 8px 0;
+}
+
+.user-headline {
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}

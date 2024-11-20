@@ -1,0 +1,60 @@
+.leadership-team {
+    padding: 40px;
+    text-align: center;
+    margin-left: 20rem;
+  }
+  
+  .leadership-team__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .leadership-team__description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 32px;
+  }
+  
+  .leadership-team__members {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+  }
+  
+  .leadership-team__member {
+    width: 300px;
+  }
+  
+  .leadership-team__member-image-arnav img {
+    width: 80%;
+    height: auto;
+    border-radius: 30%;
+    margin-bottom: 16px;
+  }
+
+  .leadership-team__member-image-den img {
+    width: 65%;
+    height: 20%;
+    border-radius: 30%;
+    margin-bottom: 16px;
+  }
+
+  .leadership-team__member-image img {
+    margin-top: 10px;
+    width: 50%;
+    height: auto;
+    border-radius: 30%;
+    margin-bottom: 16px;
+  }
+  
+  .leadership-team__member-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .leadership-team__member-title {
+    font-size: 16px;
+    color: #666;
+  }

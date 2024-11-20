@@ -1,0 +1,89 @@
+.education-container {
+    background-color: #12131a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+.education-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.education-item {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.education-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.icon-wrapper {
+    margin-right: 8px;
+    margin-top: 4px;
+}
+
+.field-of-study {
+    font-weight: 600;
+}
+
+.school-name {
+    color: #555;
+}
+
+.education-duration {
+    color: #666;
+    font-size: 0.875rem;
+}
+
+.delete-button {
+    color: red;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.add-education-form {
+    margin-top: 16px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.add-button, .save-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-button:hover, .save-button:hover {
+    background-color: #0056b3;
+}
+
+.edit-button {
+    color: #007bff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 16px;
+    transition: color 0.3s ease;
+}
+
+.edit-button:hover {
+    color: #0056b3;
+}

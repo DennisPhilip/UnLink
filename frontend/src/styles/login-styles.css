@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-container {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #000024 0%, #000000 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-link {
+    text-decoration: none;
+    align-self: flex-start;
+    margin-left: 5%;
+    margin-top: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.headline {
+    font-size: 2.5rem;
+    background: linear-gradient(130deg, #a9a9a9, #0b0031);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 2rem;
+    text-align: center;
+    max-width: 600px;
+    animation: slideUp 1.5s ease;
+}
+
+.login-card {
+    background: rgb(9, 5, 25);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: fadeIn 1s ease;
+}
+
+.login-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom right, rgb(0, 0, 0), #0d0846);
+}
+
+.login-card h2 {
+    margin: 0 0 1.5rem 0;
+    color: #ffffff;
+    font-size: 1.8rem;
+}
+
+.triangle-decoration {
+    position: absolute;
+    bottom: -30%;
+    right: -10%;
+    width: 800px;
+    height: 800px;
+    background: linear-gradient(135deg, rgba(213, 212, 224, 0.1), rgba(40, 1, 54, 0.2));
+    transform: rotate(45deg);
+    z-index: 0;
+    pointer-events: none;
+    animation: fadeIn 3s ease;
+}
+
+@media (max-width: 768px) {
+    .headline {
+        font-size: 2rem;
+        padding: 0 20px;
+    }
+
+    .login-card {
+        margin: 0 20px;
+    }
+
+    .triangle-decoration {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .headline {
+        font-size: 1.5rem;
+    }
+
+    .login-card {
+        padding: 1.5rem;
+    }
+}

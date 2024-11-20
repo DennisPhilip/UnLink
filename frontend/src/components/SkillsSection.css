@@ -1,0 +1,96 @@
+.skills-container {
+    background-color: #12131a;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.skills-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill-tag {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.delete-skill-button {
+    color: red;
+    background: none;
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.add-skill-form {
+    margin-top: 16px;
+    display: flex;
+}
+
+.skill-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.add-skill-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-skill-button:hover {
+    background-color: #0056b3;
+}
+
+.save-button, .edit-button {
+    margin-top: 16px;
+}
+
+.save-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}
+
+.edit-button {
+    color: #007bff;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.edit-button:hover {
+    color: #0056b3;
+}

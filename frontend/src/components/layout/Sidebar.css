@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif; 
+  background-color: #121212;
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  transition: all 0.5s ease;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.auth {
+  background: black;
+  box-shadow: 0 0 15px rgba(128, 0, 128, 0.8); 
+  border-right: 2px solid rgba(128, 0, 128, 0.8); 
+  animation: pulse 2s infinite;
+}
+
+.no-auth {
+  background: linear-gradient(135deg, #000024 0%, #000000 100%);
+}
+
+.sidebar-link {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.sidebar-link:hover {
+  transform: scale(1.1);
+  color: #c71585; 
+}
+
+.sidebar-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-item {
+  font-size: 20px;
+  margin: 15px 0;
+  position: relative;
+  transition: transform 0.3s, background 0.3s, color 0.3s;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.sidebar-item:hover {
+  transform: scale(1.1);
+  background: rgba(128, 0, 128, 0.2); 
+  color: #c71585; 
+}
+
+.notification-badge {
+  background-color: rgb(97, 8, 200);
+  color: white;
+  border-radius: 20%;
+  padding: 5px;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  font-size: 12px;
+  z-index: 4;
+}
+
+.sidebar-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-socials {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-link {
+  display: block;
+  margin: 5px 0;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-link:hover {
+  transform: scale(1.1);
+  color: #c71585; 
+}
+
+.logout-button {
+  width: 80%;
+  padding: 10px 0;
+  background-color: #c71585; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+.logout-button:hover {
+  background-color: darkmagenta;
+  transform: scale(1.1);
+}
+
+.auth-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.auth-button {
+  background: #c71585;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.auth-button:hover {
+  background-color: darkmagenta;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.8);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.6);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.8);
+  }
+}

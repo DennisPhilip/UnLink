@@ -1,0 +1,92 @@
+.recommended-user {
+    margin-left: 140px;
+    display: flex;
+    align-items: center;
+    padding: 0.875rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+    background-color: rgba(31, 31, 31, 0.6);
+    backdrop-filter: blur(10px);
+    width: 500px;
+    transition: all 0.3s ease;
+    position: relative; 
+}
+
+.recommended-user:hover {
+    background-color: rgba(128, 0, 128, 0.2);
+    transform: translateY(-1px);
+}
+
+.user-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.user-link:hover .user-name {
+    color: #4040ff;
+}
+
+.recommended-user-info {
+    flex: 1;
+    min-width: 0; 
+    margin-right: 100px; 
+}
+
+.recommended-user-action {
+    position: absolute;
+    right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.status-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    text-transform: capitalize;
+    white-space: nowrap; 
+}
+
+.status-button:hover {
+    transform: translateY(-1px);
+    opacity: 0.9;
+}
+
+
+
+.status-button.pending {
+    background-color: #2b2b2b;
+    color: white;
+    opacity: 0.8;
+}
+
+.status-button.accept {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.status-button.reject {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.status-button.connected {
+    background-color: #27ae60;
+    color: white;
+}
+
+.status-button.connect {
+    background-color: #00008e;
+    color: white;
+}
+

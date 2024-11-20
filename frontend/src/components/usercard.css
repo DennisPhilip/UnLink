@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0b0d13;
+  color: white;
+}
+
+.profile-card {
+  width: 100%; 
+  max-width: 500px; 
+  background-color: #0d1117;
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out;
+  margin: 20px auto;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+}
+
+.banner {
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  margin: -60px auto 10px;
+  border: 3px solid #0d1117;
+  box-shadow: 0 0 55px rgba(128, 0, 128, 0.7);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.profile-picture:hover {
+  box-shadow: 0 0 25px rgba(128, 0, 128, 1);
+}
+
+.profile-details {
+  text-align: center;
+  padding: 20px;
+}
+
+.profile-details h2 {
+  margin: 10px 0;
+  font-size: 26px;
+}
+
+.profile-details p {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #b0b0b0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.profile-card,
+.banner,
+.profile-picture,
+.profile-details {
+  animation: fadeIn 1s ease;
+}
